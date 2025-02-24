@@ -1,1 +1,5 @@
 @import "tailwindcss";
+.left-65{left:-65px !important;}
+body{font-family: "Quicksand", serif;}
+
+.my-menu .active{color: blue;}
