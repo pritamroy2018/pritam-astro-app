@@ -1,6 +1,6 @@
 @import "tailwindcss";
 .left-65{left:-65px !important;}
-body{font-family: "Quicksand", serif;}
+body{font-family: "Quicksand", serif; font-weight: 500; font-size: 16px; line-height:26px}
 
 .my-menu .active{color: blue;}
 .shine {
@@ -33,3 +33,4 @@ body{font-family: "Quicksand", serif;}
       left: 125%;
     }
   }
+
