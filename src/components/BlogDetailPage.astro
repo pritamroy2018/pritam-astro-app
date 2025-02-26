@@ -1,3 +1,4 @@
+<div data-scroll-section>
 <div class="mx-auto px-3 text-center bg-indigo-600 pt-30 pb-15 sm:pt-40 sm:pb-30 bg-[url(../../src/assets/images/newsletter.jpg)] bg-center bg-cover"> 
     <h2 class="text-xl sm:text-3xl text-white">Blog Details / Blog Single Page</h2>
     <p class="text-indigo-200"><a href="/">Home</a> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 inline">
@@ -9,7 +10,8 @@
 
 
 <div class="max-w-7xl mx-auto px-4 py-15 sm:py-20">
-    <div class="block lg:flex justify-between gap-8">
+    <div class="block lg:flex justify-between gap-8" id="main">
+        <!--left blog details left panel -->
         <div class="w-full lg:w-9/12">
             <article class="">
                 <div class="">
@@ -17,7 +19,7 @@
                         <p><span class="bg-indigo-600 text-white py-1 px-2 rounded-sm">01 Jan 2025</span></p>
                         <p class="font-semibold text-indigo-600"><span class="text-gray-400">Update on</span> - 13 Feb 2025</p>
                     </div>                    
-                    <h1 class="text-3xl font-semibold">How to promote a blog post easy method</h1>
+                    <h1 class="text-3xl font-semibold" data-scroll data-scroll-direction="horizontal"  data-scroll-speed="-2" data-scroll-repeat="true">How to promote a blog post easy method</h1>
                     <div class="flex justify-left gap-4 pt-2 pb-7 sm:pb-4">
                         <div class="">
                             <a href="/" class="hover:text-indigo-600 text-gray-500 font-semibold"><img class="w-7 h-7 rounded-full inline" src="https://images.pexels.com/photos/1704488/pexels-photo-1704488.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" /> Admin</a>
@@ -103,90 +105,275 @@
                 
             </article>
         </div>
-        
-        <div class="w-full lg:w-3/12 rounded-lg mt-10 sm:mt-0">
-            <aside class="py-4 px-4 bg-indigo-600 rounded-lg mb-5">
-                <div class="flex align-items-center gap-2">
-                    <div><img class="w-15 h-15 rounded-full inline" src="https://images.pexels.com/photos/1704488/pexels-photo-1704488.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" /></div>
-                    <div>
-                        <p class="text-xl text-white">Admin</p>
-                        <p class="text-indigo-200">1.34k Subscriber</p>
-                    </div>                    
-                </div>
-                <p class="py-3 text-indigo-200 font-semibold">Hey! I'm Jese Leos. I'm a career-changer. Bootcamp grad & Dev.</p>
-                <div class="pb-3">                    
-                    <h3 class="text-xl text-white">Location</h3>
-                    <p class="text-indigo-200">India</p>
-                </div>
-                <div class="pb-3">                    
-                    <h3 class="text-xl text-white">Start</h3>
-                    <p class="text-indigo-200">March 2016</p>
-                </div>
-                <div class="pb-3">  
-                    <a href="#" class="bg-white text-center rounded-lg font-bold text-indigo-950 block py-3 px-2 hover:bg-indigo-100">Join Now</a> 
-                </div>
-                
-            </aside>
+        <!--right blog details right panel -->
+        <div class="w-full h-auto lg:w-3/12 rounded-lg mt-10 sm:mt-0" >
+            <div data-scroll data-scroll-sticky data-scroll-target="#main">
+                <aside class="py-4 px-4 bg-indigo-600 rounded-lg mb-5">
+                    <div class="flex align-items-center gap-2">
+                        <div><img class="w-15 h-15 rounded-full inline" src="https://images.pexels.com/photos/1704488/pexels-photo-1704488.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" /></div>
+                        <div>
+                            <p class="text-xl text-white">Admin</p>
+                            <p class="text-indigo-200">1.34k Subscriber</p>
+                        </div>                    
+                    </div>
+                    <p class="py-3 text-indigo-200 font-semibold">Hey! I'm Jese Leos. I'm a career-changer. Bootcamp grad & Dev.</p>
+                    <div class="pb-3">                    
+                        <h3 class="text-xl text-white">Location</h3>
+                        <p class="text-indigo-200">India</p>
+                    </div>
+                    <div class="pb-3">                    
+                        <h3 class="text-xl text-white">Start</h3>
+                        <p class="text-indigo-200">March 2016</p>
+                    </div>
+                    <div class="pb-3">  
+                        <a href="#" class="bg-white text-center rounded-lg font-bold text-indigo-950 block py-3 px-2 hover:bg-indigo-100">Join Now</a> 
+                    </div>
+                    
+                </aside>
 
-            <aside class="bg-indigo-950 rounded-lg py-5">
-                <h3 class="text-xl text-white px-4 font-semibold">Recent Posts</h3>
-                <div class="flex gap-2 px-4 pt-5">
-                    <div class="shrink-0 ">
-                        <a href="/"><img src="../../src/assets/images/thumb1.jpg" class="w-20 h-20 rounded-sm" /></a>
+                <aside class="bg-indigo-950 rounded-lg py-5" >
+                    <h3 class="text-xl text-white px-4 font-semibold">Recent Posts</h3>
+                    <div class="flex gap-2 px-4 pt-5">
+                        <div class="shrink-0 ">
+                            <a href="/"><img src="../../src/assets/images/thumb1.jpg" class="w-20 h-20 rounded-sm" /></a>
+                        </div>
+                        <div>
+                            <a href="/">
+                                <p class="text-indigo-200 text-sm">12 Feb 2025</p>
+                                <p class="text-white text-sm">There are many variations of passages of Lorem Ipsum available,</p>
+                            </a>
+                        </div>
                     </div>
-                    <div>
-                        <a href="/">
-                            <p class="text-indigo-200 text-sm">12 Feb 2025</p>
-                            <p class="text-white text-sm">There are many variations of passages of Lorem Ipsum available,</p>
-                        </a>
+                    <div class="flex gap-2 px-4 pt-5">
+                        <div class="shrink-0 ">
+                            <a href="#"><img src="../../src/assets/images/thumb2.jpg" class="w-20 h-20 rounded-sm" /></a>
+                        </div>
+                        <div>
+                            <a href="/">
+                                <p class="text-indigo-200 text-sm">12 Feb 2025</p>
+                                <p class="text-white text-sm">There are many variations of passages of Lorem Ipsum available,</p>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="flex gap-2 px-4 pt-5">
-                    <div class="shrink-0 ">
-                        <a href="#"><img src="../../src/assets/images/thumb2.jpg" class="w-20 h-20 rounded-sm" /></a>
+                    <div class="flex gap-2 px-4 pt-5">
+                        <div class="shrink-0 ">
+                            <a href="/"><img src="../../src/assets/images/thumb3.jpg" class="w-20 h-20 rounded-full" /></a>
+                        </div>
+                        <div>
+                            <a href="/">
+                                <p class="text-indigo-200 text-sm">12 Feb 2025</p>
+                                <p class="text-white text-sm">There are many variations of passages of Lorem Ipsum available,</p>
+                            </a>
+                        </div>
                     </div>
-                    <div>
-                        <a href="/">
-                            <p class="text-indigo-200 text-sm">12 Feb 2025</p>
-                            <p class="text-white text-sm">There are many variations of passages of Lorem Ipsum available,</p>
-                        </a>
+                    <div class="flex gap-2 px-4 pt-5">
+                        <div class="shrink-0 ">
+                            <a href="/"><img src="../../src/assets/images/thumb4.jpg" class="w-20 h-20 rounded-sm" /></a>
+                        </div>
+                        <div>
+                            <a href="/">
+                                <p class="text-indigo-200 text-sm">12 Feb 2025</p>
+                                <p class="text-white text-sm">There are many variations of passages of Lorem Ipsum available,</p>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="flex gap-2 px-4 pt-5">
-                    <div class="shrink-0 ">
-                        <a href="/"><img src="../../src/assets/images/thumb3.jpg" class="w-20 h-20 rounded-full" /></a>
+                    <div class="flex gap-2 px-4 pt-5">
+                        <div class="shrink-0 ">
+                            <a href="/"><img src="../../src/assets/images/thumb5.jpg" class="w-20 h-20 rounded-full" /></a>
+                        </div>
+                        <div>
+                            <a href="/">
+                                <p class="text-indigo-200 text-sm">12 Feb 2025</p>
+                                <p class="text-white text-sm">There are many variations of passages of Lorem Ipsum available,</p>
+                            </a>
+                        </div>
                     </div>
-                    <div>
-                        <a href="/">
-                            <p class="text-indigo-200 text-sm">12 Feb 2025</p>
-                            <p class="text-white text-sm">There are many variations of passages of Lorem Ipsum available,</p>
-                        </a>
-                    </div>
-                </div>
-                <div class="flex gap-2 px-4 pt-5">
-                    <div class="shrink-0 ">
-                        <a href="/"><img src="../../src/assets/images/thumb4.jpg" class="w-20 h-20 rounded-sm" /></a>
-                    </div>
-                    <div>
-                        <a href="/">
-                            <p class="text-indigo-200 text-sm">12 Feb 2025</p>
-                            <p class="text-white text-sm">There are many variations of passages of Lorem Ipsum available,</p>
-                        </a>
-                    </div>
-                </div>
-                <div class="flex gap-2 px-4 pt-5">
-                    <div class="shrink-0 ">
-                        <a href="/"><img src="../../src/assets/images/thumb5.jpg" class="w-20 h-20 rounded-full" /></a>
-                    </div>
-                    <div>
-                        <a href="/">
-                            <p class="text-indigo-200 text-sm">12 Feb 2025</p>
-                            <p class="text-white text-sm">There are many variations of passages of Lorem Ipsum available,</p>
-                        </a>
-                    </div>
-                </div>
-            </aside>
-        </div>
-        
+                </aside>
+            </div>    
+        </div>        
     </div>
 </div>
+
+
+  
+    <!-- <div class="main" >
+          <section data-scroll-section>
+              <h1 class="left-h1" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3" data-scroll-class="appear" data-scroll-repeat="true">Beautiful Holiday Destinations</h1>
+              <div class="recommendations-container">
+                  <div class="recommendations">
+                      <ul class="recommendations_list">
+                          <li class="recommendations__items"><a href="#" class="recommendations__links txt_md_black">Popular</a></li>
+                          <li class="recommendations__items"><a href="#" class="recommendations__links txt_md_grey">Adventure</a></li>
+                          <li class="recommendations__items"><a href="#" class="recommendations__links txt_md_grey">Beach</a></li>
+                      </ul>
+                      <div class="active_container">
+                          <span class="active"></span>
+                      </div>
+                  </div>
+                  <div class="recommendations__controls">
+                      <span class="control_left"><i class="fa fa-angle-left" aria-hidden="true"></i></span>
+                      <span class="control_right"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                  </div>
+              </div>
+              <div class="location_preview">
+                  <div class="preview" data-scroll data-scroll-speed="-1" >
+                      <img src="https://images.unsplash.com/photo-1559628233-100c798642d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80" alt="">
+                      <div class="preview__details">
+                          <span class="preview__details__text">
+                              <p class="preview__details__text__top txt_lg_white">Nusa Penida</p>
+                              <p class="preview__details__text__top txt_lg_white"><i class="fa fa-star" aria-hidden="true"></i> 4.7</p>
+                          </span>
+                          <p class="preview__details__text__bottom txt_lg_white"><i class="fa fa-map-marker" aria-hidden="true"></i> Bali, Indonesia</p>
+                      </div>
+                  </div>
+                  <div class="preview" data-scroll data-scroll-speed="1">
+                      <img src="https://images.unsplash.com/photo-1532186651327-6ac23687d189?ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80" alt="">
+                      <div class="preview__details">
+                          <span class="preview__details__text">
+                              <p class="preview__details__text__top txt_lg_white">Labuan Bajo</p>
+                              <p class="preview__details__text__top txt_lg_white"><i class="fa fa-star" aria-hidden="true"></i> 4.8</p>
+                          </span>
+                          <p class="preview__details__text__bottom txt_lg_white"><i class="fa fa-map-marker" aria-hidden="true"></i> NTT, Indonesia</p>
+                      </div>
+                  </div>
+                  <div class="preview" data-scroll data-scroll-speed="-1">
+                      <img src="https://images.unsplash.com/photo-1568609477908-f76bff63279c?ixlib=rb-1.2.1&auto=format&fit=crop&w=444&q=80" alt="">
+                      <div class="preview__details">
+                          <span class="preview__details__text">
+                              <p class="preview__details__text__top txt_lg_white">Mount Bromo</p>
+                              <p class="preview__details__text__top txt_lg_white"><i class="fa fa-star" aria-hidden="true"></i> 4.5</p>
+                          </span>
+                          <p class="preview__details__text__bottom txt_lg_white"><i class="fa fa-map-marker" aria-hidden="true"></i> Malang, Indonesia</p>
+                      </div>
+                  </div>
+                  <div class="preview" data-scroll data-scroll-speed="1">
+                      <img src="https://images.unsplash.com/photo-1525596662741-e94ff9f26de1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="">
+                      <div class="preview__details">
+                          <span class="preview__details__text">
+                              <p class="preview__details__text__top txt_lg_white">Gili Island</p>
+                              <p class="preview__details__text__top txt_lg_white"><i class="fa fa-star" aria-hidden="true"></i> 4.7</p>
+                          </span>
+                          <p class="preview__details__text__bottom txt_lg_white"><i class="fa fa-map-marker" aria-hidden="true"></i> Lombok, Indonesia</p>
+                      </div>
+                  </div>
+              </div>
+          </section>
+  
+          <section data-scroll-section>
+              <h1 class="centered-h1" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3" data-scroll-class="appear" data-scroll-repeat="true">Special Offers</h1>
+              <div class="centered-recommendations-container">
+                  <div class="recommendations">
+                      <ul class="recommendations_list">
+                          <li class="recommendations__items"><a href="#" class="recommendations__links txt_md_black">Family</a></li>
+                          <li class="recommendations__items"><a href="#" class="recommendations__links txt_md_grey">Couple</a></li>
+                          <li class="recommendations__items"><a href="#" class="recommendations__links txt_md_grey">Team</a></li>
+                      </ul>
+                      <div class="active_container">
+                          <span class="active"></span>
+                      </div>
+                  </div>
+              </div>
+              <div class="special-offers-container">
+                  <span class="control_left modify_control"><i class="fa fa-angle-left" aria-hidden="true"></i></span>
+                  <div class="special-offers-preview-container">
+                      <div class="preview modify_preview" data-scroll data-scroll-speed="0.5">
+                          <img src="https://images.unsplash.com/photo-1592529754743-91e25c7b9b47?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80" alt="">
+                          <div class="preview__details modify_preview__details">
+                              <h3 class="txt_lg_white modify_text">Lombok, Indonesia</h3>
+                              <p class="preview__details__text__bottom modify_preview__details__text__bottom txt_lg_white">6 Day 5 Nights</p>
+                              <span class="preview__details__text">
+                                  <p class="preview__details__text__top txt_lg_white">$450/person</p>
+                                  <p class="preview__details__text__top txt_lg_white"><i class="fa fa-star modify_i" aria-hidden="true"></i> 4.7</p>
+                              </span>
+                          </div>
+                      </div> 
+                      <div class="preview modify_preview" data-scroll data-scroll-speed="1">
+                          <img src="https://images.unsplash.com/photo-1584999675865-41e544a9d067?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80" alt="">
+                          <div class="preview__details modify_preview__details">
+                              <h3 class="txt_lg_white modify_text">Yogyakarta, Indonesia</h3>
+                              <p class="preview__details__text__bottom modify_preview__details__text__bottom txt_lg_white">7 Day 6 Nights</p>
+                              <span class="preview__details__text">
+                                  <p class="preview__details__text__top txt_lg_white">$390/person</p>
+                                  <p class="preview__details__text__top txt_lg_white"><i class="fa fa-star modify_i" aria-hidden="true"></i> 4.7</p>
+                              </span>
+                          </div>
+                      </div>   
+                      <div class="preview modify_preview" data-scroll data-scroll-speed="1.5">
+                          <img src="https://images.unsplash.com/photo-1581974206967-93856b25aa13?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1036&q=80" alt="">
+                          <div class="preview__details modify_preview__details">
+                              <h3 class="txt_lg_white modify_text">Bali, Indonesia</h3>
+                              <p class="preview__details__text__bottom modify_preview__details__text__bottom txt_lg_white">6 Day 5 Nights</p>
+                              <span class="preview__details__text">
+                                  <p class="preview__details__text__top txt_lg_white">$430/person</p>
+                                  <p class="preview__details__text__top txt_lg_white"><i class="fa fa-star modify_i" aria-hidden="true"></i> 4.7</p>
+                              </span>
+                          </div>
+                      </div>  
+                  </div>
+                  <span class="control_right modify_control"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+              </div>
+          </section>
+  
+          <section data-scroll-section id="pin">
+              <h1 class="centered-h1" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3" data-scroll-class="appear" data-scroll-repeat="true">From the Blog</h1>
+              <div class="blog">
+                  <div class="video" data-scroll data-scroll-sticky data-scroll-target="#pin">
+                      <div class="video_preview">
+                          <img src="https://images.unsplash.com/photo-1583396618422-597b2755de83?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1048&q=80" alt="">
+                      </div>
+                      <div class="video_preview_description">
+                          <h1 class="txt_md_black">Bedugul Bali! the Wonderful god  place in the world</h1>
+                          <p class="txt_md_grey">Bedugul is one of the most famous place in Bali Indonesia, Bedugul is a tourism area located in the middle of the island of Bali. The Bedugul tourism area is very well known as te best place for family vacation in Bali. Offers natural attractions, Such as large plantation areas, lake views and the beauty of Hindu Temple architecture.</p>
+                          <a href="#" class="txt_lg_black" style="text-decoration: none;"><i>Read more</i> <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                      </div>
+                  </div>
+                  <div class="blogpost">
+                      <div class="blogpost_preview">
+                          <div class="blogpost_preview_img">
+                              <img src="https://images.unsplash.com/photo-1581775231124-4f70b143b85c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80" alt="">
+                          </div>
+                          <div class="blogpost_preview_txt">
+                              <h3 class="txt_md_black">The most wonderful underwater</h3>
+                              <p class="txt_md_grey">@monicafer</p>
+                          </div>
+                      </div>
+  
+                      <div class="blogpost_preview">
+                          <div class="blogpost_preview_img">
+                              <img src="https://images.unsplash.com/photo-1523539693385-e5e891eb4465?ixlib=rb-1.2.1&auto=format&fit=crop&w=635&q=80" alt="">
+                          </div>
+                          <div class="blogpost_preview_txt">
+                              <h3 class="txt_md_black">The most Beautiful wet grassland</h3>
+                              <p class="txt_md_grey">@david_underson</p>
+                          </div>
+                      </div>
+  
+                      <div class="blogpost_preview">
+                          <div class="blogpost_preview_img">
+                              <img src="https://images.unsplash.com/photo-1576878176876-517cdb8006ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="">
+                          </div>
+                          <div class="blogpost_preview_txt">
+                              <h3 class="txt_md_black">Relax and feel the nature, unforgettable waterfall</h3>
+                              <p class="txt_md_grey">@lara.watson</p>  
+                          </div>
+                      </div>
+  
+                      <div class="blogpost_preview">
+                          <div class="blogpost_preview_img">
+                              <img src="https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1023&q=80" alt="">
+                          </div>
+                          <div class="blogpost_preview_txt">
+                              <h3 class="txt_md_black">Beautiful panorama, with fresh air relax holiday</h3>
+                              <p class="txt_md_grey">@natasha.alexander</p>
+                          </div>
+                      </div>
+                    
+                  </div>
+              </div>
+          </section>
+  
+          
+      </div> -->
+  
+</div>
+  
